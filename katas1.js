@@ -31,7 +31,6 @@
 
 // console.log(divisiblesFor(100,10));
 
-
 // #####################################################
 
 // Exercício 3
@@ -39,12 +38,12 @@
 // function stringElement(palavraUtilizada, posicaoProcurar) {
 //     let letra = palavraUtilizada[posicaoProcurar];
 //     while (letra == `${letra}`.toLowerCase()) {
-//         console.log(`${letra}`.toUpperCase());
-//         break;
+//         let letraMaiuscula = letra.toUpperCase();
+//         return letraMaiuscula;
 //     }
 // }
 
-// stringElement("algorítmos",7);
+// console.log(stringElement("algorítmos",7));
 
 // #####################################################
 
@@ -55,10 +54,10 @@
 //     for (i=0; i < posicaoFinal; i++) {
 //         nome += palavraUtilizada[i];
 //     }
-//     console.log(nome);
+//     return nome;
 // }
 
-// stringSlicer("ALGORÍTMOS", 4);
+// console.log(stringSlicer("ALGORÍTMOS", 4));
 
 // #####################################################
 
@@ -69,10 +68,10 @@
 //     for (i=posicaoInicial; i < palavraUtilizada.length; i++) {
 //         nome += palavraUtilizada[i];
 //     }
-//         console.log(nome);
-//     }
+//     return nome;
+// }
 
-// stringRest("ALGORÍTMOS", 2);
+// console.log(stringRest("ALGORÍTMOS", 2));
 
 // #####################################################
 
@@ -81,22 +80,23 @@
 // function countVowels(palavra) {
 //     let letras = 0;
 //     for (i=0; i < palavra.length; i++) {
-//         if (palavra[i] == "a") {
+//         if (`${palavra[i]}`.toLowerCase() == "a") {
 //             letras++;
-//         } if (palavra[i] == "e") {
+//         } if (`${palavra[i]}`.toLowerCase() == "e") {
 //             letras++;
-//         } if (palavra[i] == "i") {
+//         } if (`${palavra[i]}`.toLowerCase() == "i") {
 //             letras++;
-//         } if (palavra[i] == "o") {
+//         } if (`${palavra[i]}`.toLowerCase() == "o") {
 //             letras++;
-//         } else if (palavra[i] == "u") {
+//         } else if (`${palavra[i]}`.toLowerCase() == "u") {
 //             letras++;
 //         }
 //     }
-//     console.log(letras);
+//     return letras;
 // }
 
-// countVowels("abacaxi");
+// console.log (countVowels("abacaxi"));
+
 
 // #####################################################
 
@@ -105,14 +105,15 @@
 // function countTextOccurrences(texto, letra) {
 //     contador = 0;
 //     for (i=0; i<texto.length; i++) {
-//         if (`${texto[i]}`.toLowerCase() == letra) {
+//         if (`${texto[i]}`.toLowerCase() == letra.toLowerCase()) {
 //             contador++;
 //         }
 //     }
-//     console.log(contador);
+//     return contador;
 // }
 
-// countTextOccurrences("Abacaxi", "a");
+// let resultado = countTextOccurrences("Abacaxi", "a");
+// console.log(resultado);
 
 // #####################################################
 
@@ -123,10 +124,10 @@
 //     for (i=texto.length-1; i >= 0; i--) {
 //         nomeInverso += texto[i]; 
 //     }
-//     console.log(nomeInverso);
+//     return nomeInverso;
 // }
 
-// textBackwards("abacaxi");
+// console.log(textBackwards("abacaxi"));
 
 // #####################################################
 
@@ -139,10 +140,10 @@
 //             fraseSemEspaco += frase[i];
 //         }
 //     }
-//     console.log(fraseSemEspaco);
+//     return fraseSemEspaco;
 // }
 
-// removeBlank("Não ficará   espaços em branco");
+// console.log(removeBlank("Não ficará   espaços em branco"));
 
 // #####################################################
 
